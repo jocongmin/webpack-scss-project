@@ -1,3 +1,4 @@
+var webpack = require('webpack');
 var webpackUglifyJsPlugin = require('webpack-uglify-js-plugin');
 var SpritesmithPlugin = require('webpack-spritesmith');
 const path = require('path');
@@ -25,11 +26,14 @@ var templateFunction = function(data) {
     return perSprite;
 };
 
-module.exports = {
-    entry: "./main.js",
-    output: {
+const config={
+    entry: {
+        app: ["./main.js"]
+    },
+    output: { //输出目录
         path: __dirname,
-        filename: "bundle.js",
+        publicPath: "",
+        filename: 'bundle.js',
     },
     module: {
         loaders: [{
@@ -50,7 +54,7 @@ module.exports = {
         }]
     },
     plugins: [
-        new webpackUglifyJsPlugin({
+        /*new webpackUglifyJsPlugin({
             cacheFolder: path.resolve(__dirname, 'public/cached_uglify/'),
             debug: true,
             minimize: true,
@@ -61,7 +65,8 @@ module.exports = {
             compressor: {
                 warnings: false
             }
-        }),
+        }),*/
+        new webpack.HotModuleReplacementPlugin(),
         new ExtractTextPlugin('css/style.css'),
         new SpritesmithPlugin({
             src: {
@@ -92,4 +97,5 @@ module.exports = {
             template: 'index.ejs', // Load a custom template (ejs by default see the FAQ for details)
         })*/
     ]
-}
+};
+module.exports=config;

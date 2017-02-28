@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --progress --colors",
+    "start": "webpack-dev-server --port 8089 --inline --progress --colors",
     "product": "webpack --progress --colors",
-    "test": "webpack -w",
+    "test": "node server.js",
     "project": "webpack-dev-server -w"
   },
   "keywords": [],
