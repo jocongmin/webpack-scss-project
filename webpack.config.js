@@ -84,8 +84,11 @@ module.exports = {
                 'function_based_template': templateFunction,
             },
             apiOptions: {
-                cssImageRef: "../icon/[hash].png"
+                cssImageRef: "../img/sprite.png"
             },
+            spritesmithOptions:{
+                padding:20
+            }
         }),
         /*new HtmlWebpackPlugin({
             title: 'index',
