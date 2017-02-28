@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="btn">
+        dlkfjsdfkj
+    </div>
+</body>
+<script src="touch.js"></script>
+<script>
+touch.on('.btn', 'touchstart touchmove touchend', function(ev) {
+    console.log(ev.type);
+});
+</script>
+
+</html>

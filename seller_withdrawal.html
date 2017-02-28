@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>提现</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0, minimun-scale=1.0,user-scalable=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" src="js/auto_rem.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="top-bar top-bar-on" id="top-bar">
+        <em class="bk"></em>
+        <span class="tit">提现</span>
+        <em class="hm"></em>
+    </div>
+    <form id="mainForm">
+        <div class="shop-box withbg">
+            <div id="main-withdrawal" class="mt10">
+                <div class="w-item">
+                    <label>提现至</label>
+                    <input type="text" placeholder="请选择提现方式" disabled="disabled">
+                </div>
+                <div class="w-item">
+                    <label>持卡人<em>(姓名)</em></label>
+                    <input type="text" placeholder="请输入姓名">
+                </div>
+                <div class="w-item">
+                    <label>开户行</label>
+                    <input type="text" placeholder="请输入开户行地址">
+                </div>
+                <div class="w-item">
+                    <label>卡号<em>(账号)</em></label>
+                    <input type="number" placeholder="请输入银行卡卡号">
+                </div>
+                <div class="money-item">
+                    <p>金额<span class="money-tip">(亲，提现的金额要50 100 150...)</span></p>
+                    <p>￥
+                        <input type="text">
+                    </p>
+                </div>
+                <div class="w-value">可提现金额<em>549649元</em></div>
+            </div>
+            <p class="withdrawal-date mt10">1~3个工作日到账</p>
+            <a class="balance-a balance-v bcolor-default">提现</a>
+            <!--<a class="balance-a balance-v bcolor-on">提现</a>-->
+            <div class="select-recharge clearfix">
+                <a>查看提现历史记录</a>
+            </div>
+        </div>
+    </form>
+    <section id="pay-money-tc" class="unsee">
+        <div class="tit">提现方式<i class="clos">×</i></div>
+        <div class="way">
+            <div class="bankcard item">
+                <em></em>银行卡
+                <i class="check check-on"></i>
+            </div>
+            <div class="paywallet item">
+                <em></em>支付宝
+                <i class="check check-on"></i>
+            </div>
+        </div>
+        <div class="sure-box flex">
+            <div class="pri flex-item">
+            </div>
+            <a href="pay_success.html" class="sure flex-item">
+            确定
+           </a>
+        </div>
+    </section>
+    <div class="mask unsee"></div>
+</body>
+
+</html>

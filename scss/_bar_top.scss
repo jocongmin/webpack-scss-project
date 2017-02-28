@@ -1,0 +1,67 @@
+/* @import "bg.scss"; */
+.top-bar {
+    padding: 12px 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 205;
+    height: 45px;
+    line-height: 24px;
+    box-sizing: border-box;
+    em {
+        position: relative;
+        top: -8px;
+        right: -6px;
+        display: inline-block;
+    }
+    .bk {
+        position: absolute;
+        top: 6px;
+        left: 10px;
+        @extend .bg-bar-bk;
+    }
+    .sr {
+        position: absolute;
+        top: 9px;
+        right: 45px;
+        @extend .bg-bar-sr;
+    }
+    .hm {
+        position: absolute;
+        top: 6px;
+        right: 10px;
+        @extend .bg-bar-home;
+    }
+    .close-agreement {
+        display: inline-block;
+        float: right;
+        position: absolute;
+        top: 12px;
+        right: 10px;
+        background: url("../img/pingjia_close_03.png") no-repeat;
+        background-size: 100% 100%;
+        width: 20px;
+        height: 20px;
+    }
+    span {
+        font-size: 18px;
+        visibility: hidden;
+        color: $fnormal;
+    }
+    .buy-set {
+        position: absolute;
+        right: 10px;
+        top: 12px;
+        font-size: 14px;
+        color: $fnormal;
+    }
+}
+.top-bar-on {
+    background: white;
+    border-bottom: 1px solid #dedede;
+    span {
+        visibility: visible!important;
+    }
+}

@@ -1,0 +1,197 @@
+.select-recharge {
+    width: 94%;
+    margin: auto;
+    a {
+        font-size: 15px;
+        color: $theme;
+        text-decoration: underline;
+        text-align: right;
+        &:hover {
+            color: $theme;
+        }
+        &:link {
+            color: $theme;
+        }
+        &:active {
+            color: $theme;
+        }
+    }
+}
+
+#recharge {
+    background: #ffffff;
+    position: absolute;
+    top: 42px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 640px;
+    .money {
+        display: flex;
+    }
+    .money-num {
+        flex: 1;
+    }
+}
+
+#recharge_success {
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 640px;
+    .success {
+        text-align: center;
+        padding-top: 70px;
+    }
+    .sf-i {
+        display: inline-block;
+    }
+    .success-icon {
+        @extend .bg-sf-success;
+    }
+    .fail-icon {
+        @extend .bg-sf-fail;
+    }
+    .apply-icon {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+    }
+    .apply-icon-fail {
+        background: url('../img/fail.png') no-repeat;
+        background-size: 100% 100%;
+    }
+    .bind-success {
+        background: url('../img/bind-success.png') no-repeat;
+        background-size: 100% 100%;
+    }
+    .apply-icon-no {
+        background: url('../img/cannot.png') no-repeat;
+        background-size: 100% 100%;
+    }
+    .apply-text {
+        text-align: center;
+        font-size: 18px;
+        color: $fweight;
+        margin-top: 15px;
+    }
+    .prompt {
+        text-align: center;
+        font-size: 18px;
+        color: $theme;
+        margin-bottom: 25px;
+    }
+    .connect-code {
+        text-align: center;
+        font-size: 16px;
+        color: $fweight;
+        margin-bottom: 25px;
+        a {
+            color: $theme;
+        }
+    }
+    .recharge-text {
+        text-align: center;
+        font-size: 18px;
+        color: $fweight;
+        margin: 15px 0;
+    }
+    .recharge-s {
+        background: #f2f2f2;
+        font-size: 14px;
+        color: $fnormal;
+        padding: 13px 10px;
+        margin-bottom: 30px;
+        span {
+            &:nth-of-type(2) {
+                float: right;
+                color: $theme;
+            }
+        }
+    }
+}
+
+.money {
+    margin: 20px 0;
+    background: #f2f2f2;
+    padding: 16px 0;
+    .money-name {
+        font-size: 14px;
+        color: $fnormal;
+        width: 43px;
+        float: left;
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        top: 1px;
+    }
+    .money-num {
+        display: inline-block;
+        input {
+            border: none;
+            background: #f2f2f2;
+            color: $theme;
+            width: 82%;
+            height: 19px;
+            font-size: 14px;
+        }
+        ::-webkit-input-placeholder {
+            font-size: 14px;
+            color: $flight;
+        }
+    }
+}
+
+.recharge-agreement {
+    background: white;
+    padding-left: 16px;
+    ul.num {
+        li {
+            list-style-type: decimal;
+            margin: 5px;
+        }
+    }
+    .rule li {
+        list-style-type: decimal;
+        margin: 5px 5px 5px 0;
+    }
+    .rst {
+        .lit {
+            font-weight: bold;
+            list-style-type: disc;
+        }
+        p {
+            margin: 5px;
+        }
+    }
+    h3 {
+        font-size: 16px;
+        color: $theme;
+    }
+}
+
+.recharge-agreement-link {
+    em {
+        margin-right: 4px;
+    }
+    span {
+        position: relative;
+        top: -4px;
+        font-size: 14px;
+    }
+    a {
+        font-size: 14px;
+        position: relative;
+        top: -3px;
+        color: $theme;
+        text-decoration: underline;
+    }
+    .watch-agree {
+        float: none;
+    }
+}

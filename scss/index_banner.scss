@@ -1,0 +1,29 @@
+#index-banner {
+	background: white;
+	margin-top: 5px;
+	.box {
+		position: relative;
+		display: inline-block;
+		margin-bottom: 5px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		img {
+			width: 100%;
+			width: 16.0rem;
+			height: 6.5rem;
+		}
+		background: white;
+		span {
+			display: inline-block;
+			display: none;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			color: white;
+			padding: 4px 10px;
+			background: rgba(178, 168, 159, 0.8);
+		}
+	}
+}

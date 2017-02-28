@@ -1,0 +1,72 @@
+#order-detail-info {
+    color: $flight;
+    background: white;
+    margin-top: 3px;
+    $fc: #4b4b4b;
+    .item {
+        position: relative;
+        padding: 12px 10px;
+        font-size: 13px;
+        border-bottom: 1px solid #f2f2f2;
+        line-height: 18px;
+        label {
+            margin-left: 28px;
+        }
+        .sr {
+            @extend .bg-o-shr;
+            display: block;
+            float: right;
+        }
+    }
+    .fh {
+        color: $theme;
+    }
+    .tk {
+        color: #f89c43;
+    }
+    .wl {
+        color: #4387f8;
+    }
+    .wl-info {
+        color: $flight;
+        padding: 10px;
+        margin-bottom: -10px;
+        border-top: 1px solid #f2f2f2;
+        margin-top: 10px;
+        overflow: hidden;
+        .word {
+            color: $fweight;
+        }
+    }
+    .s-wl {
+        @extend .bg-right-more;
+        display: inline-block;
+        opacity: 0.4;
+        float: right;
+        transform: rotate(270deg);
+        position: relative;
+        top: 2px;
+        right: 10px;
+    }
+    .s-on {
+        transform: rotate(450deg)!important;
+    }
+    .icon {
+        display: inline-block;
+        @extend .bg-dingdan_a;
+        position: absolute;
+        top: 10px;
+    }
+    .icon-s {
+        @extend .bg-dingdan_a;
+    }
+    .icon-t {
+        @extend .bg-dingdan_d;
+    }
+    .icon-w {
+        @extend .bg-order-detail-sway;
+    }
+    .icon-d {
+        @extend .bg-dingdan_aa;
+    }
+}

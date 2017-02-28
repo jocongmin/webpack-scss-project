@@ -1,0 +1,50 @@
+.mbp5 {
+    margin-bottom: 5px;
+}
+#shopmanage-name {
+    background: white;
+    .shopmanage-box {
+        position: relative;
+        width: auto;
+        margin: 0 17px;
+        padding: 17px 0;
+        color: $fnormal;
+        border-bottom: 1px solid $bcolr;
+        align-items: center;
+        img {
+            width: 55px;
+            border-radius: 100%;
+            margin: 0 10px 0 0;
+        }
+        .name {
+            color: $aaa;
+            font-size: 18px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 46%;
+        }
+        .edit-info {
+            display: inline-block;
+            @extend .bg-edit-info;
+            position: relative;
+            top: 0px;
+            left: 2px;
+        }
+        em {
+            font-size: 13px;
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            color: #ff6d6d;
+            padding: 3px 20px;
+            border-radius: 3px;
+            border: 1px solid #ff6d6d;
+            top: 5px;
+            float: right;
+            top: 30px;
+            right: -5px;
+            position: absolute;
+        }
+    }
+}

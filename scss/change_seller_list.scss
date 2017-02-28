@@ -1,0 +1,112 @@
+#change-seller-list {
+    font-size: 12px;
+    color: $fnormal;
+    $four: 14px;
+    .sidcheck {
+        margin-right: 10px;
+        width: 18px;
+        .check {
+            margin-top: 24px;
+        }
+    }
+    .item {
+        padding: 15px 10px;
+        position: relative;
+        border-bottom: 1px solid #e7e7e7;
+    }
+    img {
+        margin-right: 10px;
+        width: 65px;
+        height: 65px;
+        border-radius: 6px;
+    }
+    h3 {
+        position: relative;
+        font-size: $four;
+        font-weight: bold;
+        color: $fweight;
+        em {
+            font-size: 12px;
+            font-weight: normal;
+            color: $flight;
+            margin-left: 15px;
+        }
+    }
+    .icon {
+        @extend .bg-change-seller-loca;
+        display: inline-block;
+        position: relative;
+        top: 5px;
+    }
+    .info {
+        margin-bottom: 10px;
+        .right {
+            position: relative;
+            height: 68px;
+            .loca {
+                position: absolute;
+                bottom: 6px;
+                width: 100%;
+                align-items: center;
+                .icon {
+                    top: 0;
+                    position: absolute;
+                    left: 0;
+                }
+                em {
+                    float: right;
+                    position: relative;
+                    top: 4px;
+                }
+                span {
+                    overflow: hidden;
+                    margin-right: 10px;
+                    margin-left: 18px;
+                    position: relative;
+                    top: 3px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+    .pj {
+        ul {
+            flex-wrap: wrap;
+            width: 103%;
+            li {
+                display: inline-block;
+                float: left;
+                margin-bottom: 10px;
+                border-radius: 3px;
+                text-align: center;
+                padding: 0 7px;
+                height: 30px;
+                line-height: 30px;
+                border: 1px solid #ddd;
+                margin: 5px 3% 5px 0;
+                min-width: 74px;
+            }
+        }
+        .hide {
+            text-align: center;
+            i {
+                @extend .bg-change-seller-xiala;
+                display: inline-block;
+                margin-top: 10px;
+                margin-bottom: -7px;
+                position: relative;
+                left: -10px;
+            }
+        }
+    }
+    .gw-icon {
+        position: absolute;
+        background: url("../img/my-guwen-em.png") no-repeat;
+        width: 75px;
+        height: 78px;
+        right: 0;
+        top: 0;
+        background-size: contain;
+    }
+}

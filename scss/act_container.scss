@@ -1,0 +1,39 @@
+#act-container {
+    background: #f8dee4;
+    padding-bottom: 100px;
+    #banner_pic {
+        img {
+            width: 16rem;
+            height: 14.5rem;
+        }
+    }
+    #prolist {
+        padding: 0 10px 10px;
+        ul {
+            width: 100.4%;
+        }
+        li {
+            width: 49.5%;
+            border: none!important;
+            box-sizing: border-box;
+            border-bottom: 1px solid #f8dee4!important;
+            border-right: 1px solid #f8dee4!important;
+            margin-bottom: 1%;
+            &:nth-child(odd) {
+                margin-right: 1%;
+            }
+        }
+    }
+    .pro-word {
+        color: $theme;
+        padding: 10px 10px 0;
+        text-shadow: 0 1px 0 #fff, -1px 1px 0 #fff, -1px -1px 0 #fff, 1px 1px 0 #fff;
+    }
+}
+
+.spell-top{
+    margin-top: 90px;
+    #prolist{
+        margin-top: 0;
+    }
+}

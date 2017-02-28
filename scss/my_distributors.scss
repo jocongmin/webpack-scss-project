@@ -1,0 +1,88 @@
+.fill-title {
+    font-size: 15px;
+    color: $fweight;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid $bcolr;
+}
+.position_rel {
+    position: relative;
+}
+.header-img {
+    width: 16.0rem;
+    height: 8.4rem;
+    background: url("../img/mybg.png") no-repeat;
+    background-size:100% 100%;
+}
+.user {
+    border-bottom: 1px solid $bcolr;
+    padding: 12px;
+    label {
+        width: 83px;
+        font-size: 14px;
+        color: $fnormal;
+        padding-left: 3px;
+    }
+    input,
+    textarea {
+        width: 70%;
+        color: $fweight;
+        border: none;
+        font-size: 14px;
+        background: transparent;
+        vertical-align: middle;
+    }
+    textarea {
+        padding-top: 2px;
+    }
+    ::-webkit-input-placeholder {
+        font-size: 14px;
+        color: $flight;
+    }
+}
+
+#distributors {
+    margin-bottom: 104px;
+    .content-center {
+        background: #ffffff;
+    }
+    .content-bottom {
+        background: #ffffff;
+        margin-top: 10px;
+    }
+    .beizhu {
+        margin-top: 40px;
+        margin-left: 12px;
+        margin-right: 12px;
+        color: $flight;
+    }
+    .watch-agree {
+        float: left!important;
+        margin-left: 12px;
+    }
+}
+
+.watch-agree {
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    i {
+        display: inline-block;
+        margin-right: 5px;
+        float: left;
+        position: relative;
+        top: -4px;
+    }
+    a,
+    label {
+        display: inline;
+        color: $theme;
+        font-size: 12px;
+        text-align: left;
+        background: transparent;
+    }
+    a {
+        margin-left: 3px;
+        text-decoration: underline;
+    }
+}

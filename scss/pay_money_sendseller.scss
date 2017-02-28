@@ -1,0 +1,117 @@
+#pay-money-sendseller {
+    color: $fnormal;
+    font-size: 14px;
+    padding: 10px;
+    border-bottom: $bor;
+    background: #fff;
+    line-height: 18px;
+    .seller {
+        flex: 2.5;
+        display: flex;
+        color: $fnormal;
+        em {}
+        span {
+            width: 8rem;
+            overflow: hidden;
+            white-space: nowrap;
+            overflow-x: scroll;
+            margin-left: 5px;
+        }
+    }
+    .change-btn {
+        text-align: right;
+        .re-select {
+            text-decoration: none;
+            color: #fff;
+            background: $theme;
+            padding: 5px 12px;
+            border-radius: 3px;
+        }
+    }
+    .re-change {
+        font-size: 13px;
+        position: relative;
+        color: #c7c7c7;
+        i {
+            position: absolute;
+            top: -9px;
+        }
+    }
+    .order-action {
+        position: relative;
+        top: 0;
+        a {
+            display: inline-block;
+            padding: 12px 16px;
+            line-height: 3px;
+        }
+    }
+    .btn-1 {
+        border: 1px solid $red;
+        border-radius: 4px;
+        color: $red;
+        margin-right: 6px;
+        display: inline-block;
+    }
+    .to-btn {
+        background: $theme;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 4px;
+        border: 1px solid $theme;
+    }
+    .span {
+        color: $red;
+        line-height: 29px;
+    }
+}
+#pay-money-sendseller.on {
+    position: fixed;
+    height: 44px;
+    line-height: 24px!important;
+    bottom: $footerHeight - 1;
+    border-bottom: 0!important;
+    left: 0;
+    z-index: 88;
+    background: $pink!important;
+    * {
+        color: white!important;
+    }
+    .re-select {
+        border: 1px solid #fff;
+        background: none!important;
+    }
+}
+#pay-money-sendseller.un {
+    position: fixed;
+    z-index: 88;
+    bottom: $footerHeight - 1;
+    height: 44px;
+    line-height: 24px!important;
+    left: 0;
+    * {
+        color: $fnormal!important;
+    }
+    span {
+        font-size: 12px!important;
+        color: $flight!important;
+        overflow:visible;
+    }
+    .re-select {
+        border: 1px solid $fnormal;
+        background: none!important;
+    }
+}
+.order-blue {
+    * {
+        color: $theme;
+    }
+    .re-change {
+        text-decoration: underline;
+    }
+}
+@media screen and (max-width: 375px) {
+    #pay-money-sendseller .seller span {
+        width: 7rem!important;
+    }
+}

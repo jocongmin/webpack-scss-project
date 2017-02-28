@@ -1,0 +1,45 @@
+#shop-top {
+    margin-top: 5px;
+    background: #fff;
+    .shop-pic {
+        text-align: center;
+        font-size: 0;
+        img {
+            width: 74px;
+            height: 74px;
+            border-radius: 100%;
+            margin: 15px 0 10px 0;
+        }
+    }
+    .shop-u {
+        text-align: center;
+        color: $theme;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .shop-title {
+        padding: 0 10% 15px 10%;
+        border-bottom: 1px solid $bcolr;
+        color: $fnormal;
+        font-size: 12px;
+    }
+    .single {
+        padding: 10px 10px;
+        label {
+            display: inline-block;
+            width: 70px;
+            font-size: 14px;
+            white-space: nowrap;
+            color: $fweight;
+        }
+        .single-text {
+            color: $fnormal;
+            font-size: 14px;
+        }
+    }
+}
+
+#shop-center {
+    background: #fff;
+    margin-top: 5px;
+}
