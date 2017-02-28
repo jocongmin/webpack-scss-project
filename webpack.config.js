@@ -4,9 +4,6 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var templateFunction = function(data) {
-/*    var shared = '.bg { background-image: url(I) }'
-        .replace('I', data.sprites[0].image);*/
-
     var perSprite = data.sprites.map(function(sprite) {
         var $name = sprite.name,
             $width = parseInt(sprite.px.width) / 2 + 2,
@@ -25,7 +22,6 @@ var templateFunction = function(data) {
             .replace('M', $tw)
             .replace('N', $th);
     }).join('\n');
-
     return perSprite;
 };
 
@@ -49,23 +45,23 @@ module.exports = {
         }, {
             test: /\.png$/,
             use: [
-                'file-loader?name=../icon/[hash].[ext]'
+                'file-loader?name=../img/[name].[ext]'
             ]
         }]
     },
     plugins: [
-        // new webpackUglifyJsPlugin({
-        //     cacheFolder: path.resolve(__dirname, 'public/cached_uglify/'),
-        //     debug: true,
-        //     minimize: true,
-        //     sourceMap: false,
-        //     output: {
-        //         comments: false
-        //     },
-        //     compressor: {
-        //         warnings: false
-        //     }
-        // }),
+        new webpackUglifyJsPlugin({
+            cacheFolder: path.resolve(__dirname, 'public/cached_uglify/'),
+            debug: true,
+            minimize: true,
+            sourceMap: false,
+            output: {
+                comments: false
+            },
+            compressor: {
+                warnings: false
+            }
+        }),
         new ExtractTextPlugin('css/style.css'),
         new SpritesmithPlugin({
             src: {
@@ -86,8 +82,8 @@ module.exports = {
             apiOptions: {
                 cssImageRef: "../img/sprite.png"
             },
-            spritesmithOptions:{
-                padding:20
+            spritesmithOptions: {
+                padding: 20
             }
         }),
         /*new HtmlWebpackPlugin({
